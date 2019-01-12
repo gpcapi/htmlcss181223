@@ -1,22 +1,47 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>예약 접수</title>
     <style>
         ul {
-            list-style:none;
+            list-style: none;
         }
+
         li {
-            line-height:50px;
+            line-height: 50px;
         }
+
         label {
-            width:60px;
-            float:left;
+            width: 60px;
+            float: left;
         }
     </style>
 </head>
+
 <body>
     <h1>예약 정보</h1>
+    <form action="" method="get">
+        <div>
+            <label for="name1">이 름</label>
+            <input type="text" name="name1" id="name1">
+        </div>
+        <br>
+        <div>
+            <label for="tel1">휴대폰</label>
+            <input type="tel" name="tel1" id="tel1">
+        </div>
+        <br>
+        <div>
+            <label for="email1">이메일</label>
+            <input type="email" name="email1" id="email1">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="예약하기">
+        </div>
+    </form>
 </body>
+
 </html>
