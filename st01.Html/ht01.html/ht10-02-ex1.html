@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <title></title>
 <style>
-    * {border: 1px solid black; padding: 10px; margin-bottom: 10px;}
-    html,body { height: 100%; }
-    header { height: 60px; }
-    nav { }
+    * {border: 1px solid black; padding: 10px; margin-bottom: 10px; text-align: center}
+    html,body { height: 100%; border: none; }
+    header { border: 1px dotted blue; margin: top 10px; vertical-align: middle;}
+    nav { border: 1px dotted blue; }
 
     #wrapbody {overflow: auto; }
-    section {width: 46%; float: left; vertical-align: bottom; display: }
-    aside {width: 46%; height:100%; float: right; }
-    article {width: 80%; margin-left:auto; margin-right:auto;}
+    section {width: 72%; float: left; vertical-align: bottom; border: 1px dotted blue; text-align: left; display: }
+    aside {width: 20%; height:120px; float: right;  border: 1px dotted blue;}
+    article {width: 80%; margin-left:auto; margin-right:auto; border: 1px dotted blue;}
 
     .col-container {
         display: table; /* Make the container element behave like a table */
@@ -23,8 +23,20 @@
         display: table-cell; /* Make elements inside the container behave like table cells */
     }
 
-    footer {height: 30px; clear: both;}
+    footer {height: 30px; clear: both; border: 1px dotted blue;}
 </style>
 </head>
 <body>
+<header>Header</header>
+<nav>Navigation</nav>
+        <aside>
+                Aside
+            </aside>
+            <section>
+            Section
+            <article>Article</article>
+            <article>Article</article>
+            </section>
+<footer>Footer</footer>
 </body>
+</html>
