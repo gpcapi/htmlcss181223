@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>반응 선택자: 스트라이프 테이블 만들기</title>
+    <style>
+        .c1{color: white;}
+        thead th:nth-child(odd){background-color: grey;}
+        thead th:nth-child(even){background-color: black;}
+        tr:nth-child(even){background-color: darkgrey;}
+        tr:hover{background-color: skyblue;}
+    </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr>
+            <tr class=c1>
                 <th>no</th><th>DepCode</th><th>DepName</th><th>Tel</th><th>Bigo</th>
             </tr>
         </thead>

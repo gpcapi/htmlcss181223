@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 반응 선택자</title>
+    <style>
+        h1:hover{color: red;}
+        
+        a:visited{color:pink;}
+        a:link{color: orange;}
+        a:hover{color:red;}
+
+        input:focus{background-color: yellow;}
+
+        input[:disabled="disabled"] {background-color: gray;}
+        input:disabled{background-color: gray;}
+
+        input[checked="checked"] {outline: 1px solid black;}
+        input:checked{outline:1px solid black;}
+
+    </style>
 </head>
 <body>
     <pre>
@@ -42,4 +58,4 @@ input 태그에 checked가 설정되면 테두리를 만드시오
     </pre>
     <input type="checkbox" name="" checked />
 </body>
-</html>
+</html>
