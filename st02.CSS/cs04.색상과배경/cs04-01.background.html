@@ -3,6 +3,108 @@
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+    <style>
+        body{
+            background-image: url(./images/bg1.png);
+            background-repeat: repeat;} /*디폴트 속성*/
+        #clip > div{
+            border: 10px dotted #000000;
+            background-color: aqua;
+            padding: 20px;
+            margin: 10px;
+            float: left;
+            width: calc(100%/3 - 40*2px); /* 40*2 = (margin(10)+border(10)+padding(20))*2(양쪽) */
+            }
+        #clip > div.bg1{
+            background-clip: border-box;} /*디폴트 속성*/
+        #clip > div.bg2{
+            background-clip: padding-box;}
+        #clip > div.bg3{
+            background-clip: content-box;}     
+        #clip::after{
+            clear: both;
+            display: block;
+            content: '';
+            }
+        #color{
+            background-color: aqua;    
+        }
+        #color > div{
+            border: 1px solid #000;
+            background-color: #fff;
+            margin-right: 50px;
+            padding: 10px;
+        }
+        #origin{
+            background-color: darkgray;
+        }
+        #origin > div{
+            background-image: url(./images/bg5.png);
+            background-repeat: no-repeat;
+            border: 10px solid darkgray;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0px;
+            float: left;
+            width: calc(100%/3 - 30*2px); /* 30*2 = (margin(0)+border(10)+padding(20))*2(양쪽) */
+            }
+        #origin > h2{
+            background-color: #fff;
+            margin-bottom: 0px;
+            padding-bottom: 20px;
+        }
+        #origin > div.bg1{
+            background-origin: border-box;} /*디폴트 속성*/
+        #origin > div.bg2{
+            background-origin: padding-box;}
+        #origin > div.bg3{
+            background-origin: content-box;}     
+        #origin::after{
+            clear: both;
+            display: block;
+            content: '';
+            }
+        #position > div{
+            background-image: url( ../images/bg2.jpg);
+            width: 700px;
+            height: 150px;
+            background-repeat: no-repeat;
+            /* 위쪽에 안쪽 여백 : 150px */
+            padding-top: 150px;
+            /* 아래쪽에 안쪽 여백 : 20px */
+            padding-bottom: 20px;
+            }
+        #position > div.bg1{
+            background-position: left top;} /*디폴트 속성*/
+        #position > div.bg2{
+            background-position: center;}
+        #position > div.bg3{
+            background-position: bottom;}
+        #position > div.bg4{
+            background-position: bottom right;} 
+        #size > div{
+            background-image: url( ../images/bg4.jpg);
+            background-repeat: no-repeat;
+            background-position: top left;
+            width: calc(100%/3 - 12px);
+            height: 300px;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        #size > div.bg1{background-size: auto;}
+        #size > div.bg2{background-size: 200px 150px;}
+        #size > div.bg3{background-size: 60% 40%;}
+        #size > div.bg4{background-size: contain;}
+        #size > div.bg5{background-size: cover;}
+        #size > div.bg6{background-size: 100% 100%;}
+        #size::after{
+            clear: both;
+            display: block;
+            content: '';
+            }
+    </style>
 </head>
 <body>
     <div id="clip">
@@ -32,7 +134,7 @@
                 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며
                 잘 알려져 있듯이 블루베리와 함께 대표적인 항산화 음식이기도 하다.
             </p>
-        </div>
+        </div> <!-- <--- ::after-->
     </div>
 
     <div id="color">
@@ -128,4 +230,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>

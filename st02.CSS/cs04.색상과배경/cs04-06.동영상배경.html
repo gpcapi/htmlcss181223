@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>동영상 배경</title>
+    <style>
+        /* 브라우저 디폴트 CSS 초기화 */
+        * {margin: 0; padding: 0;}
+
+        /* 동영상 설정 */
+        #bg{
+            /* 배경 이미지 설정 : 동영상이 안되는 경우 */
+            background-image: url(./images/flame.jpg);
+            background-repeat: no-repeat; /* 배경 이미지 한번만 출력 */
+            background-size: cover; /* 자동 넓히기 */
+            /* 동영상 설정 */
+
+            /* 동영상을 화면에 꽉 채우기 */
+            min-width: 100%; /* x축 */
+            min-height: 100%; /* y축 */
+
+            /* 동영상 위치 설정 */
+            position: fixed;
+            left: 0; /* x축 */
+            top: 0; /* y축 */
+
+            /* 동영상 겹치는 순서 설정 */
+            z-index: -1; /* 기본값은 0 */
+        }
+        
+        #container{
+            position: relative;
+            margin-left: 50%; /* x축 */
+            margin-top: 30%; /* y축 */
+        }
+    </style>
 </head>
 <body>
     <pre>

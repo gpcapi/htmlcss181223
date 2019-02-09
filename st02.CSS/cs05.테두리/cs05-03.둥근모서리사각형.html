@@ -3,6 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+        #borderradius > div{
+            border: 2px solid black;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+            float: left;
+        }
+        #borderradius::after{clear: both; display: block; content: '';}
+        div.box1{border-radius: 10px;} /* 10 10 10 10 */
+        div.box2{border-radius: 10px 20px;} /* 10 20 10 20 */
+        div.box3{border-radius: 10px 20px 30px;} /* 10 20 30 20 */
+        div.box4{border-radius: 20px 10px 40px 30px;} /* 20 10 40 30 */
+    </style>
 </head>
 <body>
     <div id="borderradius">
@@ -13,4 +27,4 @@
         <div class="box4"> </div>
     </div>
 </body>
-</html>
+</html>

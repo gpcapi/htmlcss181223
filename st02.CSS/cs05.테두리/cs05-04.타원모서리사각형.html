@@ -3,10 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+        div{
+            border: 5px solid black;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-color: orange;
+            float: left;}
+        div::after{clear: both; display: block; content: '';}
+        div.round1{border-top-left-radius: 100px 50px;}
+        div.round2{border-bottom-right-radius: 50px 30px;}
+        div.round3{border-top-right-radius: 50px;}
+
+    </style>
 </head>
 <body>
     <div class="round1"></div>
     <div class="round2"></div>
     <div class="round3"></div>
 </body>
-</html>
+</html>
