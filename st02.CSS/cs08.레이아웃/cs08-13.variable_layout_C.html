@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>가변 레이아웃 C</title>
+    <style>
+        /* 브라우저 css 초기화 */
+        *{margin: 0; padding: 0;}
+        html, body, #wrap{height: 100%; width: 100%;}
+        #header{
+            height: 100px;
+            background-color: olive;}
+        #wrapbody{
+            width: 100%;
+            height: calc(100% - 200px);
+            display: inline-block;}
+        #leftbar{
+            height: 100%;
+            width: 200px;
+            background-color: palevioletred;
+            display: inline-block;
+            float: left;}
+        #content{
+            height: 100%;
+            width: calc(100% - 200px);
+            background-color: plum;
+            display: inline-block;
+            }
+        #footer{
+            height: 100px;
+            background-color: coral;}
+    </style>
 </head>
 
 <body>
-    <h1>레이아웃 C</h1>
-
     <div id="wrap">
 
         <div id="header">
@@ -30,4 +55,4 @@
     </div>
 
 </body>
-</html>
+</html>

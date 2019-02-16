@@ -2,6 +2,22 @@
 <html>
 <head>
     <title>Ellipsis</title>
+    <style>
+        h1.ellipsis{
+            width: 300px;
+            overflow: hidden; /* 길어서 안보이는부분 hidden 처리 */
+            white-space: nowrap; /* 여러줄로 보이는 글 한줄로 처리 */
+            text-overflow: ellipsis;} /* 길어서 안보이는 부분 (...)처리 */
+        h1.ellipsis:hover{
+            width: 100%;}
+        p.ellipsis{
+            width: 300px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;}
+        p.ellipsis:hover{
+            width: 100%;}
+    </style>
 </head>
 <body>
     <h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>

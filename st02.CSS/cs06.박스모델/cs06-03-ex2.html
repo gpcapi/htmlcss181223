@@ -3,6 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+        ul{
+            height: 50px;}
+        li{
+            width: 70px;
+            height: 50px;
+            list-style-type: none;
+            display: inline-block;
+            /* inline속성이 적용된 태그는 text처럼 적용됨 */ 
+            text-align: center;
+            line-height: 50px;
+            margin-left: -6px;}
+            /* 모든 브라우저 공통적으로 자간 6px 정도임 */
+        li:nth-child(odd){
+            background-color: red;}
+        li:nth-child(even){
+            background-color: greenyellow;}
+        li:first-child{
+            border-radius: 10px 0 0 10px;}
+        li:last-child{
+            border-radius: 0 10px 10px 0;}
+    </style>
 </head>
 <body>
     <ul>

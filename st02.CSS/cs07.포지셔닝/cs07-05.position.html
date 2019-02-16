@@ -3,10 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+        div{
+            height: 50px;
+            margin: 0 10px 0 10px;}
+        #pos1{background-color: lightgreen;}
+        #pos2{background-color: blueviolet;}
+        #pos3{background-color: coral;}
+        #pos2{
+            position: relative; /* 부모 태그: body */
+            left: 200px; /* x축 */
+            top: 150px; /* y축 */
+        }
+    </style>
 </head>
 <body>
     <div id="pos1">첫번째</div>
     <div id="pos2">두번째</div>
     <div id="pos3">세번째</div>
 </body>
-</html>
+</html>
