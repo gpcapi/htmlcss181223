@@ -3,6 +3,33 @@
 <head>
     <title>가변 그리드</title>
     <meta charset="utf-8">
+    <style>
+    *{margin: 0; padding: 0;}
+    #wrapper{
+        width: 100%;
+        margin: 0 auto;}
+    header{
+        background-color: lightblue;
+        width: 100%;
+        height: 120px;}
+    .header-text{color: #fff;}
+    .content{
+        background-color: lightyellow;
+        float: left;
+        width: 68.75%;} /*calc(660/960*100px)*/
+    .right-side{
+        background-color: lightgreen;
+        float: right;
+        width: 31.25%;} /*calc(300/960*100px)*/
+    #wrappper{
+        clear: both;
+        display: block;
+        content: "";}
+    footer{
+        background-color: lightsalmon;
+        width: 100%;
+        height: 120px;}
+    </style>
 </head>
 
 <body>
@@ -21,4 +48,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html>
